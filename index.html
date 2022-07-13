@@ -21,7 +21,7 @@
             Sign up <em>now</em> to get started</h3>
             <h3>you <em>know</em> you want to.</h3>
         </div>
-        <form action="get">
+        <form action="" method="get">
             <div id="middle-right" class="form-section">
                 <h3>Let's do this!</h3>
                 <div class="form-grid">
@@ -43,19 +43,21 @@
                     </div>
                     <div class="input">
                         <label for="password">Password</label>
-                        <input type="text" id="password" name="password">
+                        <input type="text" id="password" name="password" class="hide">
+                        <p id="password-alert" class="hide">* Passwords do not match</p>
                     </div>
                     <div class="input">
                         <label for="conf-password">Confirm Password</label>
-                        <input type="text" id="conf-password" name="conf-password">
+                        <input type="text" id="conf-password" name="conf-password" class="hide">
                     </div>
                 </div>
             </div>
             <div id="bottom-right" class="form-section">
-                <button type="submit">Create Account</button>
+                <button id="submit-button">Create Account</button>
                 <p>Already have an account? <a href="">Log in</a></p>
             </div>
         </form>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
