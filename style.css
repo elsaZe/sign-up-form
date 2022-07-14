@@ -99,13 +99,13 @@ button {
 #top-right{
     padding-top: 60px;
     padding-bottom: 30px;
-    padding-right: 40px;
+    max-width: 580px;
 }
 
 .form-grid{
     display: grid;
     grid-template-columns: 1fr 2fr;
-    max-width: 500px;
+    max-width: 550px;
 }
 
 #middle-right{
@@ -125,7 +125,6 @@ button {
 }
 
 
-
 #password.show, #conf-password.show {
     border: solid 2px red;
     border-radius: 6px;
@@ -141,7 +140,7 @@ button {
     display: flex;
     flex-direction: column;
     margin-right: 20px;
-    width: 200px;
+    width: 220px;
     padding-top: 15px;
     font-family: 'Montserrat', sans-serif;
     font-size: medium;
@@ -153,7 +152,7 @@ input{
 }
 
 
-input:hover, input:active {
+input:hover, input:active, input:focus {
     background-color: var(--background);
     box-shadow: 2px 2px var(--background);
     border-radius: 6px;
